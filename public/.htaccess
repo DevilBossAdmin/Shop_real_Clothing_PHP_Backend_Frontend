@@ -1,0 +1,9 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /shop_real/public/
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^ index.php [L]
